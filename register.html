@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - SKIT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-envelope"></i> contact@skit.ac.in</span>
+                    <span><i class="fas fa-phone"></i> +91-141-2334455</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop" alt="SKIT Logo" class="logo">
+                    <span>SKIT</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="register.html" class="btn-register active">Register</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Registration Section -->
+    <section class="registration-section">
+        <div class="container">
+            <div class="registration-header">
+                <h1>Student Registration</h1>
+                <p>Fill out the form below to apply for admission at SKIT</p>
+            </div>
+
+            <div class="registration-container">
+                <form class="registration-form" id="registrationForm">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h2><i class="fas fa-user"></i> Personal Information</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="dob">Date of Birth *</label>
+                                <input type="date" id="dob" name="dob" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender *</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Address Information -->
+                    <div class="form-section">
+                        <h2><i class="fas fa-home"></i> Address Information</h2>
+                        <div class="form-group">
+                            <label for="address">Street Address *</label>
+                            <textarea id="address" name="address" rows="3" required></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City *</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State *</label>
+                                <input type="text" id="state" name="state" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pincode">PIN Code *</label>
+                                <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country *</label>
+                                <input type="text" id="country" name="country" value="India" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Information -->
+                    <div class="form-section">
+                        <h2><i class="fas fa-graduation-cap"></i> Academic Information</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="course">Preferred Course *</label>
+                                <select id="course" name="course" required>
+                                    <option value="">Select Course</option>
+                                    <option value="cse">Computer Science Engineering</option>
+                                    <option value="ece">Electronics & Communication</option>
+                                    <option value="me">Mechanical Engineering</option>
+                                    <option value="ce">Civil Engineering</option>
+                                    <option value="ee">Electrical Engineering</option>
+                                    <option value="che">Chemical Engineering</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="category">Category *</label>
+                                <select id="category" name="category" required>
+                                    <option value="">Select Category</option>
+                                    <option value="general">General</option>
+                                    <option value="obc">OBC</option>
+                                    <option value="sc">SC</option>
+                                    <option value="st">ST</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="class12Percentage">12th Percentage *</label>
+                                <input type="number" id="class12Percentage" name="class12Percentage" min="0" max="100" step="0.01" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="jeeScore">JEE Main Score</label>
+                                <input type="number" id="jeeScore" name="jeeScore" min="0" max="300">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="schoolName">School Name *</label>
+                                <input type="text" id="schoolName" name="schoolName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="boardName">Board *</label>
+                                <select id="boardName" name="boardName" required>
+                                    <option value="">Select Board</option>
+                                    <option value="cbse">CBSE</option>
+                                    <option value="rbse">RBSE</option>
+                                    <option value="icse">ICSE</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Parent/Guardian Information -->
+                    <div class="form-section">
+                        <h2><i class="fas fa-users"></i> Parent/Guardian Information</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fatherName">Father's Name *</label>
+                                <input type="text" id="fatherName" name="fatherName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="motherName">Mother's Name *</label>
+                                <input type="text" id="motherName" name="motherName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fatherOccupation">Father's Occupation</label>
+                                <input type="text" id="fatherOccupation" name="fatherOccupation">
+                            </div>
+                            <div class="form-group">
+                                <label for="parentPhone">Parent's Phone *</label>
+                                <input type="tel" id="parentPhone" name="parentPhone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="annualIncome">Annual Family Income</label>
+                            <select id="annualIncome" name="annualIncome">
+                                <option value="">Select Income Range</option>
+                                <option value="below-1lakh">Below ₹1 Lakh</option>
+                                <option value="1-3lakh">₹1 - 3 Lakh</option>
+                                <option value="3-5lakh">₹3 - 5 Lakh</option>
+                                <option value="5-10lakh">₹5 - 10 Lakh</option>
+                                <option value="above-10lakh">Above ₹10 Lakh</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div class="form-section">
+                        <h2><i class="fas fa-info-circle"></i> Additional Information</h2>
+                        <div class="form-group">
+                            <label for="hostelRequired">
+                                <input type="checkbox" id="hostelRequired" name="hostelRequired">
+                                I require hostel accommodation
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="transportRequired">
+                                <input type="checkbox" id="transportRequired" name="transportRequired">
+                                I require transport facility
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="additionalInfo">Additional Information/Comments</label>
+                            <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Any additional information you'd like to share..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Terms and Conditions -->
+                    <div class="form-section">
+                        <div class="form-group">
+                            <label for="terms">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                I agree to the <a href="#" target="_blank">Terms and Conditions</a> and <a href="#" target="_blank">Privacy Policy</a> *
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="newsletter">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                I would like to receive updates and newsletters from SKIT
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Submit Application
+                        </button>
+                        <p class="form-note">
+                            <i class="fas fa-info-circle"></i>
+                            Please ensure all information is correct before submitting. You will receive a confirmation email after successful submission.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SKIT</h3>
+                    <p>Swami Keshvanand Institute of Technology is committed to providing quality technical education and fostering innovation.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan, India</p>
+                    <p><i class="fas fa-phone"></i> +91-141-2334455</p>
+                    <p><i class="fas fa-envelope"></i> contact@skit.ac.in</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SKIT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

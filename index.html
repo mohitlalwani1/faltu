@@ -1,53 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>web</title>
-    <link rel="stylesheet" href="ass'/css/style.css" />
-  </head>
-  <body>
-    <div class="main">
-      <!DOCTYPE html>
-      <html lang="en">
-        <head>
-          <met charset="UTF-8" />
-          <met name="viewport" content="width=device-width, initial-scale=1" />
-          <title>Website Header</title>
-          <link rel="stylesheet" href="test/slider.html" />
-          <style></style>
-        </head>
-        <body>
-          <!-- Top Header -->
-          <div class="top-header">
-            <div>
-              📧 <a href="mailto:contact@example.com">contact@example.com</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKIT - Swami Keshvanand Institute of Technology</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-envelope"></i> contact@skit.ac.in</span>
+                    <span><i class="fas fa-phone"></i> +91-141-2334455</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
-            <div>📍 123 Tech Street, Agra, India</div>
-          </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=50&h=50&fit=crop" alt="SKIT Logo" class="logo">
+                    <span>SKIT</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="register.html" class="btn-register">Register</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-          <!-- Navigation Bar -->
-          <div class="nav-bar">
-            <div class="nav-logo">Skit</div>
-            <nav>
-              <ul class="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Contact</a></li>
-                <button class="info-btn">Info</button>
-                <!-- New Info button -->
-              </ul>
-            </nav>
-          </div>
-        </body>
-      </html>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to SKIT</h1>
+            <p>Swami Keshvanand Institute of Technology - Shaping Future Engineers</p>
+            <div class="hero-buttons">
+                <a href="register.html" class="btn btn-primary">Apply Now</a>
+                <a href="about.html" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Campus">
+        </div>
+    </section>
 
-      <div
-        class="bg-gray-800 text-white px-4 py-2 flex justify-between items-center text-sm"
-      >
-        <!-- Left: Gmail -->
-      </div>
-    </div>
-  </body>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose SKIT?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Quality Education</h3>
+                    <p>Industry-relevant curriculum designed to meet modern engineering challenges</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Expert Faculty</h3>
+                    <p>Experienced professors and industry professionals guiding your journey</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Modern Labs</h3>
+                    <p>State-of-the-art laboratories and computing facilities</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Placement Support</h3>
+                    <p>Strong industry connections ensuring excellent placement opportunities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>5000+</h3>
+                    <p>Students</p>
+                </div>
+                <div class="stat-item">
+                    <h3>200+</h3>
+                    <p>Faculty Members</p>
+                </div>
+                <div class="stat-item">
+                    <h3>95%</h3>
+                    <p>Placement Rate</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Industry Partners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SKIT</h3>
+                    <p>Swami Keshvanand Institute of Technology is committed to providing quality technical education and fostering innovation.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan, India</p>
+                    <p><i class="fas fa-phone"></i> +91-141-2334455</p>
+                    <p><i class="fas fa-envelope"></i> contact@skit.ac.in</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SKIT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
 </html>
